@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oliver\\Desktop\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj": {}
+    "D:\\Github opgaver\\Skole opgaver (Github)\\Netværk bytes opgave med nicklas\\Netveark-programmering\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oliver\\Desktop\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj": {
+    "D:\\Github opgaver\\Skole opgaver (Github)\\Netværk bytes opgave med nicklas\\Netveark-programmering\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oliver\\Desktop\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj",
+        "projectUniqueName": "D:\\Github opgaver\\Skole opgaver (Github)\\Netværk bytes opgave med nicklas\\Netveark-programmering\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj",
         "projectName": "netveark-programmering-opgave-1",
-        "projectPath": "C:\\Users\\Oliver\\Desktop\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj",
+        "projectPath": "D:\\Github opgaver\\Skole opgaver (Github)\\Netværk bytes opgave med nicklas\\Netveark-programmering\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1.csproj",
         "packagesPath": "C:\\Users\\Oliver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oliver\\Desktop\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\obj\\",
+        "outputPath": "D:\\Github opgaver\\Skole opgaver (Github)\\Netværk bytes opgave med nicklas\\Netveark-programmering\\netveark-programmering-opgave-1\\netveark-programmering-opgave-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Oliver\\AppData\\Roaming\\NuGet\\NuGet.Config",

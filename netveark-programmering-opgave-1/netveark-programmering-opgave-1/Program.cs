@@ -6,7 +6,7 @@ namespace netveark_programmering_opgave_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello there!");
         }
     }
 }
