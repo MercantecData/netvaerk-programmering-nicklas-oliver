@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+*.cache
+
+netveark-programmering-opgave-1/netveark-programmering-opgave-1/obj/netveark-programmering-opgave-1.csproj.nuget.dgspec.json
+
+netveark-programmering-opgave-1/netveark-programmering-opgave-1/obj/netveark-programmering-opgave-1.csproj.nuget.g.props
+
+netveark-programmering-opgave-1/netveark-programmering-opgave-1/obj/project.assets.json
