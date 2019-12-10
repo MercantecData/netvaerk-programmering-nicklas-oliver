@@ -12,17 +12,21 @@ namespace Server_InSendAndReceiveTask
         static void Main(string[] args)
         {
             bool ISTrue = true;
-            while (ISTrue)
-            {
-                // ===================== Receiving message ==========================0
-                int port = 9420;
+            // ===================== Receiving message ==========================
+            Console.WriteLine("Before we get started, please write the number of the port, you'd like to connect to: ");
+            int UserPortChoice = int.Parse(Console.ReadLine());
+            Console.WriteLine("Next up, write the ip from the pc you'd like to connect to.");
+            string UserIpChoice = (Console.ReadLine());
+
+            int port = UserPortChoice;
 
                 IPAddress ip = IPAddress.Any;
                 IPEndPoint localEndpoint = new IPEndPoint(ip, port);
 
                 TcpListener listener = new TcpListener(localEndpoint);
                 listener.Start();
-
+            while (ISTrue)
+            {
                 Console.WriteLine("Awaiting Clients");
                 TcpClient client = listener.AcceptTcpClient();
 
@@ -35,27 +39,22 @@ namespace Server_InSendAndReceiveTask
 
                 Console.WriteLine(message);
                 // ===================== Sending message ============================0
-                Thread.Sleep(2000);
-                Console.ReadKey();
+                Console.WriteLine("write your message");
 
+                // Establishing connection so that i can send a message
                 TcpClient client2 = new TcpClient();
+                IPAddress ip2 = IPAddress.Parse(UserIpChoice);
+                IPEndPoint endPoint2 = new IPEndPoint(ip2, port);
+                client2.Connect(endPoint2);
 
-                int serverPort = 9420;
-                IPAddress serverIP = IPAddress.Parse("172.16.142.201");
-                IPEndPoint serverEndPoint = new IPEndPoint(serverIP, serverPort);
 
-                client2.Connect(serverEndPoint);
-
-                NetworkStream stream2 = client.GetStream();
+                //TcpClient client2 = listener.AcceptTcpClient();
+                NetworkStream stream2 = client2.GetStream();
 
                 string text = Console.ReadLine();
                 byte[] clientBuffer = Encoding.UTF8.GetBytes(text);
 
                 stream2.Write(clientBuffer, 0, clientBuffer.Length);
-
-                client.Close();
-
-
             }
         }
     }
