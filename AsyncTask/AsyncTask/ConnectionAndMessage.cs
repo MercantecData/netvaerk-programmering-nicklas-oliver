@@ -48,8 +48,9 @@ namespace AsyncTask
             string recievedMessage = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("\n\nUser says-----> " + recievedMessage + "\n");
+            Console.Write("\n\nUser says: ");
             Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine(recievedMessage + "\n");
         }
     }
 }
