@@ -10,7 +10,8 @@ namespace ClientAppNetwork
         static void Main(string[] args)
         {
             Console.Write("Hvad for en ip vil du forbinde til: ");
-            string IPString = Console.ReadLine();
+            string IPString = "172.16.241.96";
+            Console.ReadLine();
             Console.Write("Hvad for en port vil du forbinde til: ");
             int port = int.Parse(Console.ReadLine());
             IPAddress ip1 = IPAddress.Any;
