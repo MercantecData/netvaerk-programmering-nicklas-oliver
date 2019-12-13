@@ -48,22 +48,26 @@ namespace NetworkRecieveAndSendTask
         }
         public void SendMessage(int port, string userIpChoice)
         {
-            Console.WriteLine("write your message");
+            while (true)
+            {
+                Console.WriteLine("write your message");
 
-            // Establishing connection so that i can send a message
-            TcpClient client = new TcpClient();
-            IPAddress ip = IPAddress.Parse(userIpChoice);
-            IPEndPoint endPoint = new IPEndPoint(ip, port);
-            client.Connect(endPoint);
+                // Establishing connection so that i can send a message
+                TcpClient client = new TcpClient();
+                IPAddress ip = IPAddress.Parse(userIpChoice);
+                IPEndPoint endPoint = new IPEndPoint(ip, port);
+                client.Connect(endPoint);
 
 
-            //TcpClient client2 = listener.AcceptTcpClient();
-            NetworkStream stream = client.GetStream();
+                //TcpClient client2 = listener.AcceptTcpClient();
+                NetworkStream stream = client.GetStream();
 
-            string text = Console.ReadLine();
-            byte[] clientBuffer = Encoding.UTF8.GetBytes(text);
+                string text = Console.ReadLine();
+                byte[] clientBuffer = Encoding.UTF8.GetBytes(text);
 
-            stream.Write(clientBuffer, 0, clientBuffer.Length);
+                stream.Write(clientBuffer, 0, clientBuffer.Length);
+
+            }
         }
     }
 }
